@@ -60,7 +60,7 @@ def openWebsite():
 	sorted_repo = sorted(repo_dict.iteritems(), key = operator.itemgetter(1))
 	for val in reversed(sorted_repo):
 		repo_url = "https://github.com/" + username + "/" + val[0]
-		print "\nrepo name : ",val[0], "\nrepo url  : ",repo_url, "\nstars     : ",val[1]
+		print ("\nrepo name : ",val[0], "\nrepo url  : ",repo_url, "\nstars     : ",val[1])
 		i = i + 1
 		if i > top_limit:
 			break
